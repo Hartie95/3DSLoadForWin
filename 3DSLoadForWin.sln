@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GatewayMobile", "GatewayMobile", "{BDC87EB8-C4F5-4B3D-AF1F-D935B2387D19}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3DSLoadForWin", "3DSLoadForWin", "{BDC87EB8-C4F5-4B3D-AF1F-D935B2387D19}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GatewayMobile.Shared", "GatewayMobile\GatewayMobile.Shared\GatewayMobile.Shared.shproj", "{6C2E5908-F45B-4AE8-85A4-6DBFC45A82B5}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "3DSLoadForWin.Shared", "GatewayMobile\GatewayMobile.Shared\3DSLoadForWin.Shared.shproj", "{6C2E5908-F45B-4AE8-85A4-6DBFC45A82B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayMobile.Windows", "GatewayMobile\GatewayMobile.Windows\GatewayMobile.Windows.csproj", "{74248597-D58B-47E5-80C3-0663A8E7C43E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DSLoadForWin.Windows", "GatewayMobile\GatewayMobile.Windows\3DSLoadForWin.Windows.csproj", "{74248597-D58B-47E5-80C3-0663A8E7C43E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayMobile.WindowsPhone", "GatewayMobile\GatewayMobile.WindowsPhone\GatewayMobile.WindowsPhone.csproj", "{69801856-CC4E-445C-8A01-D06DF50DB477}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DSLoadForWin.WindowsPhone", "GatewayMobile\GatewayMobile.WindowsPhone\3DSLoadForWin.WindowsPhone.csproj", "{69801856-CC4E-445C-8A01-D06DF50DB477}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
