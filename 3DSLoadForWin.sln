@@ -5,17 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3DSLoadForWin", "3DSLoadForWin", "{BDC87EB8-C4F5-4B3D-AF1F-D935B2387D19}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "3DSLoadForWin.Shared", "GatewayMobile\GatewayMobile.Shared\3DSLoadForWin.Shared.shproj", "{6C2E5908-F45B-4AE8-85A4-6DBFC45A82B5}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "3DSLoadForWin.Shared", "3DSLoadForWin\3DSLoadForWin.Shared\3DSLoadForWin.Shared.shproj", "{6C2E5908-F45B-4AE8-85A4-6DBFC45A82B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DSLoadForWin.Windows", "GatewayMobile\GatewayMobile.Windows\3DSLoadForWin.Windows.csproj", "{74248597-D58B-47E5-80C3-0663A8E7C43E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DSLoadForWin.Windows", "3DSLoadForWin\3DSLoadForWin.Windows\3DSLoadForWin.Windows.csproj", "{74248597-D58B-47E5-80C3-0663A8E7C43E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DSLoadForWin.WindowsPhone", "GatewayMobile\GatewayMobile.WindowsPhone\3DSLoadForWin.WindowsPhone.csproj", "{69801856-CC4E-445C-8A01-D06DF50DB477}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DSLoadForWin.WindowsPhone", "3DSLoadForWin\3DSLoadForWin.WindowsPhone\3DSLoadForWin.WindowsPhone.csproj", "{69801856-CC4E-445C-8A01-D06DF50DB477}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		GatewayMobile\GatewayMobile.Shared\GatewayMobile.Shared.projitems*{74248597-d58b-47e5-80c3-0663a8e7c43e}*SharedItemsImports = 4
-		GatewayMobile\GatewayMobile.Shared\GatewayMobile.Shared.projitems*{6c2e5908-f45b-4ae8-85a4-6dbfc45a82b5}*SharedItemsImports = 13
-		GatewayMobile\GatewayMobile.Shared\GatewayMobile.Shared.projitems*{69801856-cc4e-445c-8a01-d06df50db477}*SharedItemsImports = 4
+		3DSLoadForWin\3DSLoadForWin.Shared\3DSLoadForWin.Shared.projitems*{74248597-d58b-47e5-80c3-0663a8e7c43e}*SharedItemsImports = 4
+		3DSLoadForWin\3DSLoadForWin.Shared\3DSLoadForWin.Shared.projitems*{6c2e5908-f45b-4ae8-85a4-6dbfc45a82b5}*SharedItemsImports = 13
+		3DSLoadForWin\3DSLoadForWin.Shared\3DSLoadForWin.Shared.projitems*{69801856-cc4e-445c-8a01-d06df50db477}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

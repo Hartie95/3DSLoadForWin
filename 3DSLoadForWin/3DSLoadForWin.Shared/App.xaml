@@ -1,7 +1,7 @@
 ﻿<Application
-    x:Class="GatewayMobile.App"
+    x:Class="the3DSLoadForWin.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GatewayMobile">
+    xmlns:local="using:the3DSLoadForWin">
 
 </Application>

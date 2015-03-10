@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     class helper
     {

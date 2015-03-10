@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     /// <summary>
     /// Only the UI Management will be done inside of this class, anything else will be done in the Manager and Server class

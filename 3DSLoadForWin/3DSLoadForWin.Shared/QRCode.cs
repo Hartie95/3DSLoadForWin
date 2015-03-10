@@ -12,7 +12,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     class QRCode
     { 

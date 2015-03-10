@@ -9,7 +9,7 @@ using System.Diagnostics;
  * 
  * */
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     class Settings
     {

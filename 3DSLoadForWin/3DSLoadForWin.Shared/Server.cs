@@ -12,7 +12,7 @@ using Windows.Storage;
 
 /* this File is based on the httpServer Sample for Windows phone from Nokia */
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     class Server
     {

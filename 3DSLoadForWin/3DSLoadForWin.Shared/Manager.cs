@@ -22,7 +22,7 @@ using Windows.Storage;
  * create Settings pannel(normaly hidden)
 */
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     class Manager
     {

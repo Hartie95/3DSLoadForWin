@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // Die Elementvorlage "Leere Seite" ist unter http://go.microsoft.com/fwlink/?LinkId=234238 dokumentiert.
 
-namespace GatewayMobile
+namespace the3DSLoadForWin
 {
     /// <summary>
     /// Only the UI Management will be done inside of this class, anything else will be done in the Manager and Server class

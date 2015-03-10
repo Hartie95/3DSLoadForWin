@@ -6,7 +6,7 @@
     <SharedGUID>6c2e5908-f45b-4ae8-85a4-6dbfc45a82b5</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>GatewayMobile</Import_RootNamespace>
+    <Import_RootNamespace>the3DSLoadForWin</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
