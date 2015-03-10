@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6c2e5908-f45b-4ae8-85a4-6dbfc45a82b5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GatewayMobile</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Manager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QRCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\code.bin" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\LoadCode.dat" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\LoadROP.dat" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\MemoryDump.dat" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\RegionThree.dat" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\VCInject.dat" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Sites\LoadROP.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Sites\multi.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Sites\gw.html">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\Decrypt9.bin" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Files\Decrypt9.dat" />
+  </ItemGroup>
+</Project>

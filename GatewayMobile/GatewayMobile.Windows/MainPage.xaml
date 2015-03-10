@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="GatewayMobile.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GatewayMobile"
+    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   >
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="lable">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Width" Value="225"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="225"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="225"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+    <ScrollViewer>
+       <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" Margin="25">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Your IP:" Style="{StaticResource lable}"/>
+                        <!--<TextBlock Name="ip" Text="IP" FontSize="15" VerticalAlignment="Center"/>-->
+                        <ComboBox  FontSize="20" Name="ip">
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Wich launcher:" Style="{StaticResource lable}"/>
+                        <ComboBox  FontSize="20" Name="typeSelection">
+                            <ComboBoxItem IsSelected="True">Gateway</ComboBoxItem>
+                            <ComboBoxItem >Decrypt9</ComboBoxItem>
+                            <ComboBoxItem >RegionThree</ComboBoxItem>
+                            <ComboBoxItem >LoadCode</ComboBoxItem>
+                            <ComboBoxItem >LoadRop</ComboBoxItem>
+                            <ComboBoxItem >MemoryDump</ComboBoxItem>
+                            <ComboBoxItem >VCInject</ComboBoxItem>
+                            <ComboBoxItem >Own</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Name="encryptionBox" Orientation="Horizontal" Visibility="Collapsed">
+                        <TextBlock Text="Is encrypted:" Style="{StaticResource lable}"/>
+                        <ComboBox  FontSize="20" Name="encryptionSelection" >
+                            <ComboBoxItem IsSelected="True">Yes</ComboBoxItem>
+                            <ComboBoxItem >No</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Name="fileBox" Orientation="Horizontal">
+                        <TextBlock Text="Filename:" Style="{StaticResource lable}"/>
+                        <TextBox Name="fileNameBox" IsEnabled="False" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="ssButton" IsEnabled="False">Start</Button>
+                        <Button Name="qrButton" IsEnabled="False" Margin="15,0,0,0">Update QR-Code</Button>
+                    </StackPanel>
+                    <Button Name="settingsButton">Settings</Button>
+                    <TextBlock Name="Debug" Width="250" />
+                </StackPanel>
+            </Grid>
+            <Grid Background="White" Width="300" Height="300" VerticalAlignment="Bottom" Margin="25">
+                <TextBlock Name="urlBlock" Width="250" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="5" Foreground="Black" TextWrapping="Wrap" >127.0.0.1</TextBlock>
+                <Image Name="qrCode" Width="200" Height="200"/>  
+            </Grid>
+            <Grid Name="settingsPannel"  HorizontalAlignment="Center" Margin="0,0,0,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Canvas.ZIndex="2" Visibility="Collapsed">
+                <StackPanel Orientation="Vertical" Margin="0,25,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Port:" Style="{StaticResource lable}"/>
+                        <TextBox Name="portBox" Text="80" FontSize="15" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Folder Path:" Style="{StaticResource lable}"/>
+                        <TextBlock Name="pathBlock" Text="-" FontSize="15" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Button Name="localFolder">set http root</Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="resetSettingsButton">resetSettings</Button>
+                        <Button Name="saveButton">Save</Button>
+                    </StackPanel>
+                    <Button Name="closeSettingsButton">Close</Button>
+                </StackPanel>
+            </Grid>
+       </Grid>
+    </ScrollViewer>
+</Page>

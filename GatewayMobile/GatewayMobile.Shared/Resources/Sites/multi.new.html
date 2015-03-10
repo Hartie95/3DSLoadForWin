@@ -1,0 +1,73 @@
+<html><head><script>
+d=document,r=parent,w=window;
+if(r==w){
+	l='LoadROP.dat',g=decodeURI(w.location.search.substring(1)).split('&');
+	if(g[0].length>0)l=g[0];
+	c=g[1];
+	d.title='Load '+l;
+	if(c!=undefined&&c.length>0)d.title+='['+c+']';
+	w.onload=function(){
+		h=d.body.childNodes[0];
+		h.innerHTML='Downloading ROP file '+l+': ';
+		x=new XMLHttpRequest();
+		x.open('GET',l,true);
+		x.overrideMimeType('text/plain; charset=x-user-defined');
+		x.onload=function(){
+			if(x.status==200){
+				u='OK';
+				s=x.responseText;
+				y=s.length/2;
+				t=[];
+				for(i=0,j=0;i<y;t[i++]=(s.charCodeAt(j)&255)+(s.charCodeAt(j+1)<<8),j+=2);
+				x=null;
+				q=String.fromCharCode.apply(null,t)+Array(385-y).join('\0');
+				t=null;
+				if(c!=undefined&&c.length>0){
+					u+='<br>Setting filename parameter to '+c+': ';
+					b=q.indexOf('dmc:/');
+					if(b!=-1){
+						b+=5;
+						e=q.indexOf('\0',b);
+						while(q.charCodeAt(e++)==0);
+						e-=2;
+						v=e-b-c.length+1;
+						if(v>0){
+							u+='OK';
+							q=q.substring(0,b)+c+Array(v).join('\0')+q.substring(e);
+						}else{
+							u+='too long, using default';
+						}
+					}else{
+						u+='"dmc:/" not found';
+					}
+				}
+				q+='\0';
+				u+='<br>Executing...<iframe height=0 src=#/>';
+			}else{
+				u+='failed';
+			}
+			h.innerHTML+=u;
+		}
+		x.send();
+	}
+}else{
+	w.onload=function(){
+		b=0,f=w.frameElement,p=f.parentNode,o=d.createElement('object');
+		o.addEventListener('beforeload',function(){
+			if(++b==1)p.addEventListener('DOMSubtreeModified',r.z);
+			else if(b==2)p.removeChild(f);
+		});
+		d.body.appendChild(o);
+	}
+}
+function z(){
+	n=navigator.userAgent;
+	if(n.indexOf('Nintendo 3DS')!=-1){
+		m=[];
+		for(j=1;j<410;j++){
+			i=j/96,a=Array(j);
+			for(k=0;k<i;a[k++]=q);
+			m.push(d.createTextNode(String.fromCharCode.apply(null,Array(a))));
+		}
+	}
+}</script></head><body><h1>.</h1></body></html>
